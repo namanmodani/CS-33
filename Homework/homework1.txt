@@ -1,0 +1,48 @@
+# CS 33 Homework 1
+# Naman Modani
+# 005-816-643
+
+Problem 2.71
+
+    A
+
+        This function was originally supposed to, but does not actually perform sign extension. 
+        Instead of filling the bits with the MSB it fills it with 0s instead. This is because 
+        the & 0xFF part compares the current expression with 000 .... 1111 1111, which will 
+        always have a 0 in the MSB position. Owing to this, the result can never be negative.
+
+    B
+
+        int xbyte(packed_t word, int bytenum) {
+	        return (word << ((3 - bytenum) << 3)) >> 24;
+        }
+
+Problem 2.82
+
+    A 
+
+        This is not always 1. Mathematically, (x < y) == (-x > -y), but in code, due to the asymmetry of 
+		integers, this may not still be true. Assuming x = INT_MIN, y = 0. Then x < y is 1, but 
+        -x > -y is 0 since -INT_MIN = INT_MIN. Here -INT_MIN = INT_MAX + 1, which overflows to INT_MIN. 
+
+    B 
+
+        This will always yield 1. (x + y) << 4 + y - x is equal to 
+        (x + y) * 2^4 + y - x = x * 16 + y * 16 + y - x = 15 * x + 17 * y.
+
+    C 
+
+        This will always yield 1. ~x = -x - 1 by the properties of the NOT operator, so we can rewrite the 
+		expression as (-x - 1) + (-y - 1) + 1 = -(x + y) - 1, which is equal to -x - y - 1 on both sides.
+
+    D  
+
+        This will always yield 1. We can rearrange the right side since (unsigned) is not an operation.
+        Which means we have (unsigned)(-(y - x)) = (unsigned)(x - y). Then we say that we are considering 
+        x and y unsigned values to get ux-uy.
+
+    E
+
+        This will always yield 1. x >> 2 is the equivalent of dividing by 2^2, which is 4. Similarly, << 2 
+		is multiplication by 2^2, which is also 4, therefore the left side (x >> 2) << 2 = x. Now 
+		x <= x. The <= handles integer division, where the actual left side may be smaller than the original value of x.
