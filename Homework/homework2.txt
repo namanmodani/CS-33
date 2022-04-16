@@ -2,3 +2,33 @@
 # Naman Modani
 # 005-816-643
 
+The statement printf(“%s”, magic8ball[3][4]); prints “wrong”.
+
+The array magic8ball is a 3-dimensional array of 8 x 8 x 8 chars. We need to find out what is stored at the position magic8ball[3][4]. 
+
+The [3] references the outermost level of the array, indicating that we wish to get to the 3rd element. We find 3 * 8 * 8 since each 
+element at the outermost level is an [8][8] array and takes up 8 * 8 * 1 bytes (1 because char is 1 byte). Meanwhile, the [4] references 
+the next inner level of the array, which consists of char arrays of size 8. For this, we find 4 * 8 * 1 (1 because char is 1 byte) to 
+obtain how far into the array we need to go to find the 4th element. So, the data we're looking to obtain can be calculated by combination:
+
+[3][4] = (3 * 8 * 8 * 1) + (4 * 8 * 1) = 224 bytes from the start of the array.
+
+Since 224 is 14 * 16 + 0 * 1, it can be expressed as e0 in hex. Knowing that the starting location of the magic8ball is 0x7fffffffe000,
+we add e0 bytes and end up looking at the location magic8ball[3][4], which is 0x7fffffffe0e0. At this address, the elements are:
+
+0x57    0x72    0x6f    0x6e    0x67    0x00    0x00    0x00
+
+Since we're on a 64-bit little endian architecture machine, we are supposed to switch the order of the bytes. However, since chars only
+have 1 byte, switching the order of the bytes makes no tangible difference. This implies that we can move on and convert the hex to 
+ascii. Using the conversion table, we see that the bytes correspond to the following characters:
+
+0x57: w
+0x72: r
+0x6f: o
+0x6e: n
+0x67: g
+0x00: (null) - this terminates the C string.
+0x00: (null)
+0x00: (null)
+
+Therefore, the final answer is the string "wrong".
