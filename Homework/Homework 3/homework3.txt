@@ -61,7 +61,7 @@ Problem 3.63
 Problem 3.64
 
     A   
-        &A[i][j][k] = x_d + L * (i * S * T + j * T + k)
+        &A[i][j][k] = x_A + L * (i * S * T + j * T + k)
 
     B 
         From the code, we see S * T = 65, T = 13, and R * S * T = 455. 
