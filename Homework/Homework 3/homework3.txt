@@ -1,6 +1,5 @@
 # CS 33 Homework 3
 # Naman Modani
-# 005-816-643
 
 Problem 3.60
 

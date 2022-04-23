@@ -1,6 +1,5 @@
 # CS 33 Homework 1
 # Naman Modani
-# 005-816-643
 
 Problem 2.71
 
@@ -22,7 +21,7 @@ Problem 2.82
     A 
 
         This is not always 1. Mathematically, (x < y) == (-x > -y), but in code, due to the asymmetry of 
-	integers, this may not still be true. Assume x = INT_MIN, y = 0 - then x < y is 1, but 
+	    integers, this may not still be true. Assume x = INT_MIN, y = 0 - then x < y is 1, but 
         -x > -y is 0 since -INT_MIN = INT_MIN. Here -INT_MIN = INT_MAX + 1, which overflows to INT_MIN. 
 
     B 
@@ -33,7 +32,7 @@ Problem 2.82
     C 
 
         This will always yield 1. ~x = -x - 1 by the properties of the NOT operator, so we can rewrite the 
-	expression as (-x - 1) + (-y - 1) + 1 = -(x + y) - 1, which is equal to -x - y - 1 on both sides.
+	    expression as (-x - 1) + (-y - 1) + 1 = -(x + y) - 1, which is equal to -x - y - 1 on both sides.
 
     D  
 
@@ -44,6 +43,6 @@ Problem 2.82
     E
 
         This will always yield 1. x >> 2 is the equivalent of dividing by 2^2, which is 4. Similarly, << 2 
-	is multiplication by 2^2, which is also 4, therefore the left side (x >> 2) << 2 = x. Now 
-	x <= x. The <= handles integer division, where the actual left side may be smaller than the original 
-	value of x.
+        is multiplication by 2^2, which is also 4, therefore the left side (x >> 2) << 2 = x. Now 
+        x <= x. The <= handles integer division, where the actual left side may be smaller than the original 
+        value of x.
