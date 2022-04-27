@@ -1,0 +1,540 @@
+/lib64/ld-linux-x86-64.so.2
+ke&L
+libc.so.6
+socket
+fflush
+strcpy
+exit
+sprintf
+fopen
+__isoc99_sscanf
+connect
+signal
+puts
+stdin
+fgets
+__errno_location
+read
+stdout
+memcpy
+strcasecmp
+__ctype_b_loc
+getenv
+stderr
+alarm
+gethostbyname
+gethostname
+bcopy
+close
+fprintf
+sleep
+__libc_start_main
+write
+__gmon_start__
+GLIBC_2.3
+GLIBC_2.7
+GLIBC_2.14
+GLIBC_2.2.5
+5B5 
+%D5 
+%B5 
+%:5 
+%25 
+%*5 
+%"5 
+%z4 
+%r4 
+%j4 
+AUATUSH
+-I6 
+([]A\A]
+ATUSH
+P[]A\
+AVAUATUS
+[]A\A]A^
+ATUSH
+[]A\
+=90 
+=,0 
+D$      d
+D$ s
+D$!e
+D$".
+D$# 
+D$$ 
+D$%N
+D$&i
+D$'c
+D$(e
+D$),
+D$* 
+D$+b
+D$,u
+D$-t
+D$/d
+D$0o
+D$1n
+D$2'
+D$3t
+D$4 
+D$5t
+D$6e
+D$7l
+D$8l
+D$9 
+D$:a
+D$;n
+D$<y
+D$=o
+D$>n
+D$?e
+D$@ 
+D$Aa
+D$Bb
+D$Co
+D$Du
+D$Et
+D$F 
+D$Gi
+D$Ht
+D$I 
+D$J(
+D$Ke
+D$Ls
+D$Mp
+D$Ne
+D$Oc
+D$Pi
+D$Qa
+D$Rl
+D$Sl
+D$Ty
+D$U 
+D$Vo
+D$Wn
+D$X 
+D$YP
+D$Zi
+D$[a
+D$\z
+D$]z
+D$^a
+D$_)
+D$`.
+D$bI
+D$cf
+D$d 
+D$ey
+D$fo
+D$gu
+D$h 
+D$id
+D$jo
+D$k 
+D$ly
+D$mo
+D$nu
+D$o 
+D$pw
+D$qo
+D$rn
+D$s'
+D$tt
+D$u 
+D$vg
+D$we
+D$xt
+D$y 
+D$za
+D${n
+D$|y
+D$} 
+D$~e
+!u+H
+***truncH
+ated***
+1@F`
+ATUSH
+[]A\
+AUATUSH
+[]A\A]
+AVAUATUSH
+[]A\A]A^
+AUATUSH
+[]A\A]
+AWAVAUATUSH
+Error: CH
+lient unH
+able to H
+create sH
+C ockef
+Error: DH
+NS is unH
+able to H
+resolve H
+server aH
+C(ddref
+C,ss
+Error: UH
+nable toH
+ connectH
+ to the H
+C servf
+C$er
+Error: RH
+esult stH
+ring tooH
+ large. H
+IncreaseH
+ SUBMITRH
+_MAXBUF
+Error: RH
+esult stH
+ring conH
+tains anH
+ illegalH
+ or unprH
+intable H
+characteH
+C@r.
+Error: CH
+lient unH
+able to H
+write toH
+ the serH
+C(ver
+Error: CH
+lient unH
+able to H
+read firH
+st headeH
+r from sH
+C0ervef
+D$ H
+Error: CH
+lient unH
+able to H
+read heaH
+ders froH
+m serverH
+Error: CH
+lient unH
+able to H
+read staH
+tus messH
+age fromH
+ server
+[]A\A]A^A_
+Error: CH
+lient unH
+able to H
+create sH
+E ockef
+Error: DH
+NS is unH
+able to H
+resolve H
+server aH
+E(ddref
+E,ss
+[]A\A]A^A_
+%s: Error: Couldn't open %s
+Usage: %s [<input_file>]
+Now that, was beautiful!
+Phase 1 defused. And they said you'd never amount to anything. 
+That's number 2.  Why so serious?
+Now that was beautiful! Halfway there!
+Four stages complete? And they said I was the mad one!
+Alright good work, you'll like this last one!
+Achievement Unlocked: Master Haxor
+So you think you can stop the bomb with ctrl-c, do you?
+Initialization error: Running on an illegal host [1]
+Initialization error: Running on an illegal host [2]
+    =   =                                                      
+     \-= /=| /=|                                               
+      \ /  |/  |  __     It's a perfect day for some mayhem.   
+       ||_   _// / /                                           
+       \ _\ /_|   |                                         
+        |o v o \ /                                             
+ _||    | <__  |&        Have some fun with my six
+|--\     \\_/ /---\      explodey phases ... *giggles*
+|--|    __\__/\__  \--\                                     
+ == \  /     /   \  \/                                       
+  \  \| |         \  |                                         
+   \/ \ \  ^    \  \ |                                      
+    \/ | |     / \  \/                                         
+     \__/|    /--/\__|    Watch your step!                
+         | ,  |---|==|                                         
+        /=| |==\  |  |                                         
+ERROR: Input string is too large.
+Congratulations! You've defused the bomb!
+Your instructor has been notified and will verify your solution.
+Oh, you really stepped in it, mate!
+Your instructor has been notified.
+Well...
+OK. :-)
+Invalid phase%s
+Initialization error:
+defused
+exploded
+%d:%s:%d:%s
+oops
+This bomb's for you!
+You'll like this one!
+Ohoho, this'll be good
+Got'cha!
+Surprise!
+BOOM!!!
+The bomb has blown up.
+%d %d %d %d %d %d
+Error: Premature EOF on stdin
+GRADE_BOMB
+Error: Input line too long
+localhost
+cs33.cs.ucla.edu
+cs33
+lnxsrv01.seas.ucla.edu
+lnxsrv02.seas.ucla.edu
+lnxsrv03.seas.ucla.edu
+lnxsrv04.seas.ucla.edu
+lnxsrv05.seas.ucla.edu
+lnxsrv06.seas.ucla.edu
+lnxsrv07.seas.ucla.edu
+lnxsrv08.seas.ucla.edu
+lnxsrv09.seas.ucla.edu
+lnxsrv10.seas.ucla.edu
+Program timed out after %d seconds
+GET /%s/submitr.pl/?userid=%s&userpwd=%s&lab=%s&result=%s&submit=submit HTTP/1.0
+Error: HTTP request failed with error %d: %s
+Error: Unable to connect to server %s
+%%%02X
+%s %d %[a-zA-z ]
+cs33.seas.ucla.edu
+AUTORESULT_STRING=%s
+sp22
+csapp
+;*3$"
+qHRFf9KcSnsW72Tu0qXa
+005816643
+GCC: (GNU) 4.8.5 20150623 (Red Hat 4.8.5-44)
+/usr/lib/gcc/x86_64-redhat-linux/4.8.5/include
+/usr/include/bits
+/usr/include
+bomb.c
+stddef.h
+types.h
+stdio.h
+libio.h
+stdlib.h
+phases.h
+support.h
+<built-in>
+printf
+__off_t
+_IO_read_ptr
+_chain
+size_t
+_shortbuf
+_IO_buf_base
+long long unsigned int
+read_line
+long long int
+phase_defused
+_fileno
+_IO_read_end
+_flags
+_IO_buf_end
+_cur_column
+_old_offset
+infile
+initialize_bomb
+_IO_marker
+stdin
+_IO_write_ptr
+_sbuf
+/u/cs/class/cs33/cs33t6/labs/bomb-lab-server/cs33-bomblab/src
+short unsigned int
+GNU C 4.8.5 20150623 (Red Hat 4.8.5-44) -mtune=generic -march=x86-64 -ggdb -Og -fjump-tables -fno-stack-protector --param case-values-threshold=2
+_IO_save_base
+_lock
+_flags2
+_mode
+__builtin_puts
+stdout
+sizetype
+_IO_write_end
+_IO_lock_t
+_IO_FILE
+fopen
+_pos
+_markers
+unsigned char
+short int
+_vtable_offset
+exit
+bomb.c
+input
+_next
+__off64_t
+_IO_read_base
+_IO_save_end
+__pad1
+__pad2
+__pad3
+__pad4
+__pad5
+_unused2
+argv
+phase_1
+phase_2
+phase_3
+phase_4
+phase_5
+phase_6
+_IO_backup_base
+argc
+main
+_IO_write_base
+welcome_message
+crtstuff.c
+__JCR_LIST__
+deregister_tm_clones
+__do_global_dtors_aux
+completed.6355
+__do_global_dtors_aux_fini_array_entry
+frame_dummy
+__frame_dummy_init_array_entry
+bomb.c
+phases.c
+array.3161
+support.c
+sig_handler
+driverlib.c
+rio_readinitb
+urlencode
+rio_writen
+rio_read
+rio_readlineb
+__FRAME_END__
+__JCR_END__
+__init_array_end
+_DYNAMIC
+__init_array_start
+__GNU_EH_FRAME_HDR
+_GLOBAL_OFFSET_TABLE_
+__libc_csu_fini
+skip
+getenv@@GLIBC_2.2.5
+read_two_numbers
+phase_defused
+strcasecmp@@GLIBC_2.2.5
+__errno_location@@GLIBC_2.2.5
+stdout@@GLIBC_2.2.5
+strcpy@@GLIBC_2.2.5
+func_switch
+puts@@GLIBC_2.2.5
+stdin@@GLIBC_2.2.5
+write@@GLIBC_2.2.5
+_edata
+array_2d
+num_input_strings
+phase_5
+initialize_bomb_solve
+blank_line
+submitr
+last
+phase_3
+phase_1
+invalid_phase
+init_driver
+alarm@@GLIBC_2.2.5
+close@@GLIBC_2.2.5
+node3
+read@@GLIBC_2.2.5
+__libc_start_main@@GLIBC_2.2.5
+fgets@@GLIBC_2.2.5
+explode_bomb
+node1
+__data_start
+signal@@GLIBC_2.2.5
+gethostbyname@@GLIBC_2.2.5
+node5
+fprintf@@GLIBC_2.2.5
+__gmon_start__
+__dso_handle
+memcpy@@GLIBC_2.14
+_IO_stdin_used
+func_rec
+host_table
+string_length
+__libc_csu_init
+fflush@@GLIBC_2.2.5
+welcome_message
+__isoc99_sscanf@@GLIBC_2.7
+infile
+sigalrm_handler
+init_timeout
+__bss_start
+userid
+s3cret_ph4se
+main
+bcopy@@GLIBC_2.2.5
+read_line
+strings_not_equal
+phase_4
+fopen@@GLIBC_2.2.5
+phase_6
+scratch
+driver_post
+send_msg
+phase_2
+gethostname@@GLIBC_2.2.5
+sprintf@@GLIBC_2.2.5
+exit@@GLIBC_2.2.5
+bomb_id
+connect@@GLIBC_2.2.5
+__TMC_END__
+node2
+node4
+user_password
+sleep@@GLIBC_2.2.5
+node6
+read_six_numbers
+initialize_bomb
+__ctype_b_loc@@GLIBC_2.3
+stderr@@GLIBC_2.2.5
+socket@@GLIBC_2.2.5
+.symtab
+.strtab
+.shstrtab
+.interp
+.note.ABI-tag
+.note.gnu.build-id
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rela.dyn
+.rela.plt
+.init
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.jcr
+.dynamic
+.got
+.got.plt
+.data
+.bss
+.comment
+.debug_aranges
+.debug_info
+.debug_abbrev
+.debug_line
+.debug_str
+.debug_loc
