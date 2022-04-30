@@ -25,12 +25,11 @@ Problem 2.89
         therefore, results in the same number. Casting doubles to floats could result in infinity overflow, while casting ints to 
         floats will not, but in this instance that won't happen since x was an int before being cast as a double in the function.
 
-
     B
         dx - dy == (double)(x-y)
 
-        False - does not always yield 1.
- 
+        False - does not always yield 1. In the case of x = INT_MIN and y = 1, the doubles do not overflow due to the increased precision, 
+        but the ints cast as doubles could overflow and wrap around to become a positive number.
 
     C
         (dx + dy) + dz == dx + (dy + dz)
@@ -38,15 +37,16 @@ Problem 2.89
         True - always yields 1. Although addition of double is usually not associative, in this case, dx, dy, and dz are also in the range of 
         ints. As a result, their addition would not cause any rounding problems.
 
-
     D
         (dx * dy) * dz == dx * (dy * dz)
 
-        False - does not always yield 1.
-
-
+        False - does not always yield 1. Multiplication may end up creating a rounding error of the double type, since it might result in some 
+        some number that cannot be held in a double float's precision. A potential example could be with values x = (2^30 + 2^5 + 1), 
+        y= (2^30 + 2^3 + 1), and z = (2^30 + 1). Here, the numbers of the fractional part are rounded due to the inexistence of an exact
+        representation during multiplication.
 
     E
         dx / dx == dz / dz
 
-        False - does not always yield 1. When dx equals 0 and dz equals 1, dividing by 0 would be NaN, while dividing 1 by 1 would be 1.
+        False - does not always yield 1. When dx equals 0 and dz equals any other real number, dividing by 0 would be NaN, while dividing 
+        dz by dz would be 1.
