@@ -19,11 +19,34 @@ Problem 3.70
 Problem 2.89
 
     A
+        (float) x == (float) dx
 
-    B 
+        True - always yields 1. Casting an integer to double does not result in any overflow or rounding. Converting them both to floats, 
+        therefore, results in the same number. Casting doubles to floats could result in infinity overflow, while casting ints to 
+        floats will not, but in this instance that won't happen since x was an int before being cast as a double in the function.
 
-    C 
 
-    D 
+    B
+        dx - dy == (double)(x-y)
+
+        False - does not always yield 1.
+ 
+
+    C
+        (dx + dy) + dz == dx + (dy + dz)
+
+        True - always yields 1. Although addition of double is usually not associative, in this case, dx, dy, and dz are also in the range of 
+        ints. As a result, their addition would not cause any rounding problems.
+
+
+    D
+        (dx * dy) * dz == dx * (dy * dz)
+
+        False - does not always yield 1.
+
+
 
     E
+        dx / dx == dz / dz
+
+        False - does not always yield 1. When dx equals 0 and dz equals 1, dividing by 0 would be NaN, while dividing 1 by 1 would be 1.
