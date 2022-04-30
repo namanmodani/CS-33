@@ -1,0 +1,29 @@
+# CS 33 Homework 3
+# Naman Modani
+
+Problem 3.70
+
+    A 
+        e1.p: 0
+        e1.y: 8
+        e2.x: 0
+        e2.next: 8
+
+    B 
+        16 bytes. This comprises of 8 bytes for long*/long and add 8 bytes for long/union*.
+        It is the maximum number of bytes that every element struct can hold.
+
+    C
+        up->e2.x = *(up->e2.next->e1.p) - (up->e2.next->e1.y);
+        
+Problem 2.89
+
+    A
+
+    B 
+
+    C 
+
+    D 
+
+    E
