@@ -1,2 +1,34 @@
 # CS 33 Homework 5
 # Naman Modani
+
+Problem 5.19
+
+void psum_4by1unrolled(float a[], float p[], long n) 
+{
+    long i;
+    float val, lastVal;
+    lastVal = p[0] = a[0];
+
+    float f0, f1, f2, f3;
+
+    for (i = 1; i < n - 4; i = i + 4) 
+    {
+        f0 = lastVal + a[i];
+        f1 = f0 + a[i + 1];
+        f2 = f1 + a[i + 2];
+        f3 = f2 + a[i + 3];
+
+        p[i] = f0;
+        p[i + 1] = f1;
+        p[i + 2] = f2;
+        p[i + 3] = f3;
+
+        lastVal = lastVal + (a[i] + a[i + 1] + a[i + 2] + a[i + 3]);
+    }
+
+    for (; i < n; i++) 
+    {
+        lastVal += a[i];
+        p[i] = lastVal;
+    }
+}     
