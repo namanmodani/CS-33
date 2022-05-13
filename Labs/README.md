@@ -7,3 +7,4 @@ The following table houses my lab scores through CS 33. The Warmup Lab was worth
 | Warmup Lab | 5/5 |
 | Data Lab | 47/47 |
 | Bomb Lab | 75/70 |
+| Attack Lab | 100/100 |
