@@ -3,4 +3,21 @@
 
 Problem 6.41
 
+    Line 3 misses. However, one pixel is cached after this. So, Lines 4, 5, and 6, hit. 
+    Therefore, 75% of writes hit in the cache.
+
 Problem 6.45
+
+    void transpose_optimized(int *dst, int *src, int dim)
+    {
+        int i, j;
+        
+        for (i = 0; i < dim; i+=2) {
+            int addr1 = i*dim;
+            int addr2 = (i+1)*dim;
+            for (j = 0; j < dim; j++) {
+                dst[j*dim + i] = src[addr1 + j];
+                dst[j*dim + (i+1)] = src[addr2 + j];
+            }
+        }
+    }
