@@ -1,0 +1,11 @@
+# CS 33 Homework 7
+# Naman Modani
+
+Problem 1
+
+Problem 2
+
+    A. ijxy
+    
+    Here, each loop iterates SIZE times. Effectively, what this means is that i, j, x, and y iterate 40
+    times each. Upon execution, the total number of iterations is 40 * 40 * 40 * 40.
