@@ -3,14 +3,19 @@
 
 Problem 1
 
+    "\nThe value of i is: 7"
+
 Problem 2
 
     E. jyix
     
     The most cache-friendly ordering is where the variables in the outermost loop are also the major indices of the 
-    multidimensional arrays. Since the memory reads here are primarily sequential, the cache blocks are kept active for 
+    multidimensional arrays. Since memory reads here are primarily sequential, the cache blocks are kept active for 
     as long as required. 
     
-    The most cache-unfriendly ordering, on the other hand, is where the faster-changing iterators are the major indices 
+    The most cache-unfriendly ordering is where the faster-changing iterators are the major indices 
     of the arrays. The memory reads here are all over the place, so cache blocks are brought into the working set and 
     evicted out of necessity. As a result, ton of time is wasted on cache transfer.
+
+    This can also be done by first finding the best loop ordering, which is ixjy and then "reversing" each pair of indices 
+    to get the answer.
