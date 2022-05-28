@@ -3,7 +3,35 @@
 
 Problem 1
 
-    "\nThe value of i is: 7"
+    In the given code, the variables and their respective registers are enlisted below.
+
+    | Variable | Register |
+
+         i         $s3
+         j         $e4 
+         r         $e6
+
+    The corresponding C code for this MIPS code is:
+
+    Loop:
+
+        if (save[i]) != r, the go to Exit
+        i = i + j;
+        go to Loop;
+        
+        Exit:
+            save[0]: 0
+            save[1]: 0
+            save[2]: 0
+            save[3]: 0
+            save[4]: 0
+            save[5]: 0
+            save[6]: 0 
+            save[7]: 6
+            save[8]: 3
+            save[9]: 2
+
+    Therefore, the output of the following MIPS code is: "\nThe value of i is: 7"
 
 Problem 2
 
