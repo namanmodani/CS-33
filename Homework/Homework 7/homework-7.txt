@@ -5,7 +5,12 @@ Problem 1
 
 Problem 2
 
-    A. ijxy
+    E. jyix
     
-    Here, each loop iterates SIZE times. Effectively, what this means is that i, j, x, and y iterate 40
-    times each. Upon execution, the total number of iterations is 40 * 40 * 40 * 40.
+    The most cache-friendly ordering is where the variables in the outermost loop are also the major indices of the 
+    multidimensional arrays. Since the memory reads here are primarily sequential, the cache blocks are kept active for 
+    as long as required. 
+    
+    The most cache-unfriendly ordering, on the other hand, is where the faster-changing iterators are the major indices 
+    of the arrays. The memory reads here are all over the place, so cache blocks are brought into the working set and 
+    evicted out of necessity. As a result, ton of time is wasted on cache transfer.
