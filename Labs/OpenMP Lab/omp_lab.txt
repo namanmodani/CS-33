@@ -1,7 +1,6 @@
 /* 
  * CS 33: OpenMP Lab
  * Naman Modani
- * 005816643
  * modani@ucla.edu
  * omp_lab.txt
  */
@@ -19,8 +18,8 @@ be parallelized along the blue diagonal and sequentialized along the green diago
 a block (B x B) that contains elements. 
 
 After this - to speed things up - I unrolled the loop. While unrolling once gave me correct results, I was only able to 
-obtain 3.2x speedup. This led to unrolling the loop further - and after 4 unrolls (int unrollType = 8;) - I started
-obtained an average of ~4.2x speedup, which was satisfactorily high. This is the version I've submitted.
+obtain a speedup in the 3.0x - 3.2x range. This led to unrolling the loop further - and after 4 unrolls (int unrollType 
+= 8;) - I obtained an average of ~4.2x speedup, which was satisfactorily high. This is the version I've submitted.
 
 Closely following everything listed above, I was able to implement kernel_omp() and achieve high speedup while still 
 producing the correct result.
