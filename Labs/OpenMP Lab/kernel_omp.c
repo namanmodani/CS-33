@@ -14,7 +14,7 @@ void kernel_omp(int *input, int *ref, int64_t rows, int64_t cols, int penalty)
 {
     int blockSize = 64;
     int unrollType = 8;
-    
+
     for (int x = 1; x < 2 * rows - blockSize; x += blockSize) 
     {
         int overflow = (x >= rows) ? (x - rows + blockSize) : 0;
@@ -23,6 +23,7 @@ void kernel_omp(int *input, int *ref, int64_t rows, int64_t cols, int penalty)
         {
             int a = x - y;
             int b = y + 1;
+            
             for (int i = a; i < a + blockSize; i++) 
             {
                 for (int j = b; j < b + blockSize; j += unrollType) 

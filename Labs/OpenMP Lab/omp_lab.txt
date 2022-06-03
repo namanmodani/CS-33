@@ -1,0 +1,8 @@
+/* 
+ * CS 33: OpenMP Lab
+ * Name: Naman Modani
+ * UCLA ID: 005816643
+ * Email: modani@ucla.edu
+ */
+
+ 
