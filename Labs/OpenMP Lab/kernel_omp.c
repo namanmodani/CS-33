@@ -1,7 +1,6 @@
 /* 
  * CS 33: OpenMP Lab
  * Naman Modani
- * 005816643
  * modani@ucla.edu
  * kernel_omp.c
  */
