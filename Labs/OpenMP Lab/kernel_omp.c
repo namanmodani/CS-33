@@ -1,8 +1,9 @@
 /* 
  * CS 33: OpenMP Lab
- * Name: Naman Modani
- * UCLA ID: 005816643
- * Email: modani@ucla.edu
+ * Naman Modani
+ * 005816643
+ * modani@ucla.edu
+ * kernel_omp.c
  */
 
 #include <omp.h>
@@ -23,7 +24,7 @@ void kernel_omp(int *input, int *ref, int64_t rows, int64_t cols, int penalty)
         {
             int a = x - y;
             int b = y + 1;
-            
+
             for (int i = a; i < a + blockSize; i++) 
             {
                 for (int j = b; j < b + blockSize; j += unrollType) 
