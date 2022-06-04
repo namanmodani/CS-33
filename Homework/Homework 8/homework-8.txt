@@ -24,6 +24,12 @@ Problem 2
 
     (x & 3) > 2
 
+    The value in %eax is compared to 0x3 after which the loops either A. repeats or B. exits. Using this to locate the 
+    assembly corresponding to the do-while loop: %eax at address 40051f holds the variable x. which then undergoes an & 
+    operation with 0x3 and is placed in %eax again. Post that, x&3 is compared to 3. The & works like a mask, making all 
+    but the last two bits 0 - which must be 11 for the loop to run. This condition is satisfied only when x&3 = 0, 1, 2 
+    or 3.
+
 Problem 3
 
     Value of $t0 after execution of the first lw instruction: 1
