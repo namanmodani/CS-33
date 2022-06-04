@@ -9,17 +9,16 @@ Since the inter-iteration dependence of kernel_seq.c makes it impossible to para
 the array in an anti-diagonal fashion. This resulted in independence between elements within the same line, and made
 parallization easier. 
 
-Owing to this schema, the memory access pattern becomes very unfriendly to the hardware. As a result, I ended up tiling, 
-i.e. breaking the matrix into small blocks and processing each block in the row-column order, while processing blocks in 
-an anti-diagonal order.
+However, owing to this schema, the memory access pattern becomes very unfriendly to the hardware. As a result, I ended up 
+tiling, i.e. breaking the matrix into small blocks and processing each block in the row-column order, while processing 
+blocks in an anti-diagonal order.
 
 To explain this schema visually, [I've drawn it out here](https://namanmodani.com/pdfs/openmp.pdf). In short, things can
 be parallelized along the blue diagonal and sequentialized along the green diagonal. Each of the squares in the figure is 
 a block (B x B) that contains elements. 
 
-After this - to speed things up - I unrolled the loop. While unrolling once gave me correct results, I was only able to 
-obtain a speedup in the 3.0x - 3.2x range. This led to unrolling the loop further - and after 4 unrolls (int unrollType 
-= 8;) - I obtained an average of ~4.2x speedup, which was satisfactorily high. This is the version I've submitted.
+I chose a block size of B = 64 and thus unrolled by a factor of 8 (x4) [int unrollType = 8;] - I obtained an average of 
+~4.2x speedup, which was satisfactorily high. This is the version I've submitted.
 
 Closely following everything listed above, I was able to implement kernel_omp() and achieve high speedup while still 
 producing the correct result.
