@@ -1,2 +1,30 @@
 # CS 33 Homework 8
 # Naman Modani
+
+Problem 1
+
+    B
+
+    void sumitup_par3() {
+        int i, j, k;
+
+        #pragma omp parallel num_threads(4)
+        for (i = 0; i < DIM; i++) {
+            #pragma omp for reduction(+:summation)
+            for (j = 0; j < DIM; j++) {
+                summation += bigarray[i][j];
+                bigarray[i][j]++;
+            }    
+        }
+    }
+
+Problem 2
+
+    C
+
+    (x & 3) > 2
+
+Problem 3
+
+    Value of $t0 after execution of the first lw instruction: 1
+    Value of $t0 after execution of the last lw instruction: 4
