@@ -1,6 +1,6 @@
 # CS 33: Introduction to Computer Organization
 
-Notes for CS 33: Introduction to Computer Organization at UCLA.
+Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
 
 # Integer representation
 * Data types
