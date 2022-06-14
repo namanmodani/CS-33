@@ -11,7 +11,7 @@ Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
 - Byte ordering
     - Big Endian: Sun, PPC Mac, Internet
     - Little Endian: x86, ARM  
-    <img src="images/endian.png" width="50%">
+    <img src="Images/endian.png" width="50%">
 
 # x86-64
 - History
@@ -21,11 +21,11 @@ Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
     - Case study: Core-i7 6700K Skylake
         - Shared L3 cache (LLC)
         - Hyper-Threading: Shared caches, buses & ALUs
-        <img src="images/corei7.png" width="70%">
+        <img src="Images/corei7.png" width="70%">
 - Registers  
     - Can reference low-order 4 bytes (backwards compatibility)
     - `%rsp` is stack top, others are general-purpose  
-        <img src="images/registers.png" width="50%">  
+        <img src="Images/registers.png" width="50%">  
     - `%rip` is instruction pointer (not listed)  
     - A register for implicitly-set condition codes
 
@@ -65,7 +65,7 @@ Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
     4. Dynamic linked libraries
         - Linking occurs at runtime
         - Does not take too much disk space  
-    <img src="images/compilation.png" width="50%">  
+    <img src="Images/compilation.png" width="50%">  
 - Controls
     - Jumping
         - `jmp`, `je`, `jne`, `js` ...
@@ -75,7 +75,7 @@ Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
         - Use `-fno-if-conversion` flag to supress implicit conversion
     - Switch statements
         - Jump table structure  
-            <img src="images/jump_table.png" width="80%">  
+            <img src="Images/jump_table.png" width="80%">  
         - Make use of "fall through"
 - Procedures
     - Passing control
@@ -94,7 +94,7 @@ Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
         - Concept of stack frames:
             - Marked by `%rbp` (optional) and `%rsp`
             - No additional mechanism for recursion is needed  
-            <img src="images/stack_frame.png" width="60%">
+            <img src="Images/stack_frame.png" width="60%">
         - Register saving conditions
             - Caller saved
                 - `%rdi`, `%rsi`, `%rdx`, `%rcx`, `%r8`, `%r9`, `%rax`, `%r10`, `%r11`
@@ -106,20 +106,20 @@ Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
 - Data
     1. Arrays  
         - 1D arrays  
-            <img src="images/arrays.png" width="60%">  
+            <img src="Images/arrays.png" width="60%">  
         - Nested 2D arrays: `int A[R][C]`
-            <img src="images/array_nested.png" width="80%">  
+            <img src="Images/array_nested.png" width="80%">  
         - Multi-level 2D arrays:  
-            <img src="images/array_multilevel.png" width="80%">  
+            <img src="Images/array_multilevel.png" width="80%">  
     2. Structs
         - Represented as block of memory
-            <img src="images/struct.png" width="80%">  
+            <img src="Images/struct.png" width="80%">  
         - Fields are ordered according to declaration
         - Alignment:  
             - Within struct: Each element has alignment requirement K, where K is the size of this element
-                <img src="images/alignment.png" width="80%">  
+                <img src="Images/alignment.png" width="80%">  
             - Overall: Each struct has alignment requirement K, where K is the largest alignment of any element in struct
-                <img src="images/alignment_overall.png" width="80%">  
+                <img src="Images/alignment_overall.png" width="80%">  
             - To save space, put large data types first
     3. Float operations
         - Arguments passed in `%xmm0`, `%xmm1`, ...
@@ -128,7 +128,7 @@ Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
 - Address space
     - Currently using 47-bit addresses (highest address of 0x7fffffffffff)
     - Maximum stack size of 8MB on most machines  
-        <img src="images/memory.png" width="60%">  
+        <img src="Images/memory.png" width="60%">  
 - Vulnerablities
     1. Buffer overflow
         - Triggered by functions manipulating strings of arbitrary length
@@ -136,7 +136,7 @@ Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
     2. Return-oriented programming (ROT)
         - Make use of "gadgets" in text segment  
         - Trigger with `ret` instruction  
-            <img src="images/rop.png" width="60%">  
+            <img src="Images/rop.png" width="60%">  
 - Protection
     1. Use routines limiting string lengths (user-level)
     2. Randomized stack offsets
@@ -146,13 +146,13 @@ Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
 # Optimizations
 - Optimization by programmer
     1. Code motion: Reduce frequency of computations performed   
-        <img src="images/code_motion.png" width="80%">   
+        <img src="Images/code_motion.png" width="80%">   
         GCC will do this with -O1  
     2. Reduction in strength: Reduce costly operation with simpler one  
-        <img src="images/reduction_in_strength.png" width="80%">  
+        <img src="Images/reduction_in_strength.png" width="80%">  
         Here, int mul requires 3 clock cycles, int add requires 1 clock cycle 
     3. Share common subexpressions  
-        <img src="images/share_common_subexpressions.png" width="80%">  
+        <img src="Images/share_common_subexpressions.png" width="80%">  
 - Optimization blockers
     1. Procedures: Seen as a "black box"
         - Procedures may have side effects
@@ -160,11 +160,11 @@ Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
         - Fix: Use inline functions (GCC with -O1 within single file)
     2. Memory aliasing: Two memory references specify single location
         - The following code does memory load and store every time, because compiler assume possibility of memory aliasing:  
-            <img src="images/memory_aliasing.png" width=80%>  
+            <img src="Images/memory_aliasing.png" width=80%>  
         - Load and store take multiple clock cycles
         - Easily caused by direct access to storage structures
         - Fix: Define local variable to tell compiler not to check for aliasing
-            <img src="images/aliasing_fix.png" width=60%>  
+            <img src="Images/aliasing_fix.png" width=60%>  
         - Get in habit of introducing local variables accumulating within loops
 - Optimization (by programmer) limitations
     1. Most performed within procedures. Newer versions of GCC do interprocedual optimization, but not between codes in different files
@@ -173,10 +173,10 @@ Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
 - Instruction-level parallelism
     - Superscalar processor: Issue and execute multuple instructions per cycle, and instructions are scheduled dynamically
     - Some instruction have >1 clock cycle latency, but can be pipelined:  
-        <img src="images/pipeline.png" width=70%>  
+        <img src="Images/pipeline.png" width=70%>  
     - Unrolling
         - Break sequential dependency to break through latency bound (to approach throughput bound)  
-            <img src="images/unrolling.png" width=30%>  
+            <img src="Images/unrolling.png" width=30%>  
             ```
             for(int i = 0; i < limit; ++i)
                 x = x + d[i];
@@ -209,7 +209,7 @@ Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
     - Temporal locality
     - Spatial locality
 - Hierarchy  
-    <img src="images/hierarchy.png" width=70%>  
+    <img src="Images/hierarchy.png" width=70%>  
 - Caches
     - Each level in hierarchy serves as cache for the level below
     - Types of cache misses
@@ -217,17 +217,17 @@ Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
         2. Capacity miss: Working set larger than cache size
         3. Conflict miss: Limited by positioning restrictions imposed by hardware
     - Examples of cache  
-        <img src="images/cache_examples.png" width=70%>  
+        <img src="Images/cache_examples.png" width=70%>  
 - Cache memories
     - Concept of locality  
-        <img src="images/locality.png" width=60%>  
+        <img src="Images/locality.png" width=60%>  
     - General organization  
-        <img src="images/address.png" width=20%>
-        <img src="images/organization.png" width=50%>  
+        <img src="Images/address.png" width=20%>
+        <img src="Images/organization.png" width=50%>  
         1. Direct mapped cache has (E / associativity = 1)  
-            <img src="images/direct_mapped_cache.png" width=50%>  
+            <img src="Images/direct_mapped_cache.png" width=50%>  
         2. E-way set associative cache (Here E / associativity = 2)  
-            <img src="images/e_way_associative_cache.png" width=50%>   
+            <img src="Images/e_way_associative_cache.png" width=50%>   
     - Metrics
         1. Miss rate
         2. Hit time
@@ -279,8 +279,8 @@ Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
     3. Shared object file (.so file or .dll file)
 - ELF format (Executable and Linkable Format)  
     - All 3 object files use ELF format  
-    <img src="images/elf.png" width=65%>
-    <img src="images/elf_2.png" width=35%>  
+    <img src="Images/elf.png" width=65%>
+    <img src="Images/elf_2.png" width=35%>  
 - Static libraries (.a archive files)
     - Concatenate related relocatable object files into a single file with an index (called an archive)
     - During linking, only referenced .o files are linked
@@ -320,7 +320,7 @@ Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
     3. Signals
     4. Nonlocal jumps
 - Exceptions (equivalent to user-kernel transition)  
-    <img src="images/exceptions.png" width=50%>  
+    <img src="Images/exceptions.png" width=50%>  
     1. Asynchronous (Interrupts)
         - Indicated by INT pin
         - Control flow returns to next instruction
@@ -343,7 +343,7 @@ Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
 - Kernel memory invisible to application program. Kernel's address space starts with 1.
 - Every memory access go through cache memory:
     - Both memory and cache gets updated after page fault  
-        <img src="images/vm_and_cache.png" width=60%>  
+        <img src="Images/vm_and_cache.png" width=60%>  
 - Address translation: Multi-level page tables
 - TLB: Small __set-associative__ hardware cache in MMU
 - Works only because of locality
@@ -379,27 +379,27 @@ Notes from class. Adapted from @JohnnyKong, adjusted for Reinman.
     - When to use standard I/O: Disks, terminals
     - When to use RIO: Network sockets
 - How kernel represents open files  
-    <img src="images/open_files1.png" width=60%>
+    <img src="Images/open_files1.png" width=60%>
     - Open file table: An instance of opening file
         - If a process opens a file twice, there are two open file tables pointing to the same v-node table
     - V-node table: File metadata (regardless of whether file is open)
     - After `fork()`, `refcnt` is incremented:  
-        <img src="images/open_files2.png" width=60%>  
+        <img src="Images/open_files2.png" width=60%>  
         - Two processes share a same instance of opened file (including file position)
     - `dup2(int oldfd, int newfd)`: Used for I/O redirection
         - After calling `dup2(4, 1)`:  
-            <img src="images/open_files3.png" width=60%>  
+            <img src="Images/open_files3.png" width=60%>  
 - Recommended references:
     - W. Richard Stevens & Stephen A. Rago, _Advanced Programming in the Unix Environment_, 2 nd Edition, Addison Wesley, 2005
 
 # Virtual Memory: Systems
 - End-to-end Core i7 Address Translation  
-    <img src="images/address_translation.png" width=80%>  
+    <img src="Images/address_translation.png" width=80%>  
 - L1 d-cache `index` and `offset` have 12 bits is NOT a coincidence: Speed up address translation  
-    <img src="images/cache_speedup.png" width=50%>  
+    <img src="Images/cache_speedup.png" width=50%>  
 - Linux organizes VM as collections of areas:  
     - Fault handling: Traverse the `vm_area_struct`s to check if page is allocated
-    <img src="images/areas.png" width=80%>  
+    <img src="Images/areas.png" width=80%>  
 - Private Copy-on-write (COW)
 - Memory Mapping: `void -mmap(void -start, int len, int prot, int flags, int fd, int offset)`
     - `start`: A hint address
