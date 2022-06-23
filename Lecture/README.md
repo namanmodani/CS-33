@@ -1,6 +1,6 @@
 # CS 33: Introduction to Computer Organization
 
-Notes from class. Adapted from @JohnnyKong[https://github.com/JonnyKong] at Purdue, adjusted for CS 33.
+Notes from class. Adapted from [@JohnnyKong](https://github.com/JonnyKong) at Purdue, adjusted for CS 33.
 
 # Integer representation
 - Data types
