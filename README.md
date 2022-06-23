@@ -1,7 +1,9 @@
-# CS-33: Introduction to Computer Organization
-Course material for CS 33, taken under Professor Glenn Reinman in Spring 2022.
+# CS 33: Introduction to Computer Organization
 
-Language(s): C, Assembly
+This repository contains my work and course material for CS 33, taken under Professor [Glenn Reinman](https://samueli.ucla.edu/people/glenn-reinman/) in Spring 2022.
+
+Software used: C, Assembly, and OpenMP. <br>
+Class Text: Bryant & O’Hallaron, "Computer Systems: a Programmer’s Perspective" (3rd Ed.) <br>
 
 ## Course Material
 - Bits, Bytes, and Integers
@@ -20,3 +22,10 @@ Language(s): C, Assembly
 - Virtual Memory
 - I/O
 - MIPS
+
+The course comprised of five labs, content of which can be found in `/Labs`. In chronological order,
+1. [Warmup Lab](/Labs/Warmup%20Lab/)
+2. [Data Lab](/Labs/Data%20Lab/)
+3. [Bomb Lab](/Labs/Bomb%20Lab/)
+4. [Attack Lab](/Labs/Attack%20Lab/)
+5. [OpenMP Lab](/Labs/OpenMP%20Lab/)
