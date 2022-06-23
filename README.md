@@ -1,9 +1,8 @@
 # CS 33: Introduction to Computer Organization
 
-This repository contains my work and course material for CS 33, taken under Professor [Glenn Reinman](https://samueli.ucla.edu/people/glenn-reinman/) in Spring 2022.
+This repository contains my work and course material for CS 33, taken under Professor [Glenn Reinman](https://samueli.ucla.edu/people/glenn-reinman/) in Spring 2022. The class is based on Bryant & O’Hallaron, "Computer Systems: a Programmer’s Perspective" (3rd Edition).
 
-Software used: C, Assembly, and OpenMP. <br>
-Class Text: Bryant & O’Hallaron, "Computer Systems: a Programmer’s Perspective" (3rd Ed.) <br>
+Software used: C, Assembly, and OpenMP.
 
 ## Course Material
 - Bits, Bytes, and Integers
