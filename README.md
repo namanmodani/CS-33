@@ -22,7 +22,8 @@ Software used: C, Assembly, and OpenMP.
 - I/O
 - MIPS
 
-The course comprised of five labs, content of which can be found in `/Labs`. In chronological order,
+The course comprised of five labs, content of which can be found in `/Labs`. In chronological order:
+
 1. [Warmup Lab](/Labs/Warmup%20Lab/)
 2. [Data Lab](/Labs/Data%20Lab/)
 3. [Bomb Lab](/Labs/Bomb%20Lab/)
